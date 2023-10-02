@@ -12,7 +12,7 @@
     	<card:Header
 				title="McDonald's"
 				subtitle="I'm lovin it"
-				iconSrc="sap-icon://bus-public-transport" />
+				iconSrc="sap-icon://competitor" />
     	</f:header>
         	<f:content>
             </f:content>
@@ -24,7 +24,7 @@
     	<card:Header
 				title="Burgerking"
 				subtitle="You Rule"
-				iconSrc="sap-icon://bus-public-transport" />
+				iconSrc="sap-icon://jam" />
     	</f:header>
         	<f:content>
             	</f:content>
@@ -34,26 +34,16 @@
 <f:Card class="sapUiMediumMargin" width="300px">
 	<f:header>
     	<card:Header
-				title="'t Zusje"
-				subtitle="Bourgondisch genieten!"
-				iconSrc="sap-icon://bus-public-transport" />
+				title="'t zusje"
+				subtitle="Bourgondisch genieten"
+				iconSrc="sap-icon://background" />
     	</f:header>
         	<f:content>
-		
-		<List separators="None" style="width: 100%; margin-bottom: 0.75rem;">
-				<StandardListItem
-					image="{value:'zusje_logo.png', formatter: '.resolveUrl'}"
-				/>
-			</List>
-		
-			</f:content>
+            	</f:content>
+
         </f:Card>
-
-
-
-
-        <content>
+            	
         
-        </content>
+      
     </Page>
 </mvc:View>
