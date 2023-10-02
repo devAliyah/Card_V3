@@ -36,7 +36,7 @@
     	<card:Header
 				title="'t zusje"
 				subtitle="Bourgondisch genieten"
-				iconSrc="sap-icon://background" />
+				iconSrc="sap-icon://competition" />
     	</f:header>
         	<f:content>
             	</f:content>
