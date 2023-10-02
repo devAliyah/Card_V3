@@ -1,0 +1,52 @@
+<mvc:View controllerName="test.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+	xmlns:test="sap.ui.webc.main"
+    xmlns:f="sap.f"
+	xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+
+		<f:Card class="sapUiMediumMargin" width="300px">
+	<f:header>
+    	<card:Header
+				title="McDonald's"
+				subtitle="I'm lovin it"
+				iconSrc="sap-icon://bus-public-transport" />
+    	</f:header>
+        	<f:content>
+            </f:content>
+        </f:Card>
+
+
+		<f:Card class="sapUiMediumMargin" width="300px">
+	<f:header>
+    	<card:Header
+				title="De Beren"
+				subtitle="Buy a single-ride ticket for a date"
+				iconSrc="sap-icon://bus-public-transport" />
+    	</f:header>
+        	<f:content>
+            	</f:content>
+        </f:Card>
+
+
+<f:Card class="sapUiMediumMargin" width="300px">
+	<f:header>
+    	<card:Header
+				title="'t Zusje"
+				subtitle="Buy a single-ride ticket for a date"
+				iconSrc="sap-icon://bus-public-transport" />
+    	</f:header>
+        	<f:content>
+            	</f:content>
+        </f:Card>
+
+
+
+
+        <content>
+        
+        </content>
+    </Page>
+</mvc:View>
