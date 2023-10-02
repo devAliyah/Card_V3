@@ -8,8 +8,8 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("test.controller.View1", {
-            resolveUrl: function(sUrl) {
-                return sap.ui.require.toUrl("card_v3/assets/avatars/" + sUrl);
+            onInit: function () {
+
             }
         });
     });
