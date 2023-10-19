@@ -1,34 +1,37 @@
 <mvc:View controllerName="test.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
-	xmlns:c="sap.ui.webc.main"
-	xmlns:control="sap.ui.core.Control"
     xmlns:f="sap.f"
-	xmlns:card="sap.f.cards"
-	xmlns:core="sap.ui.core">
-	
+	xmlns:card="sap.f.cards">
 
     <Page id="mc" title="{i18n>mctitle}">
-	
 
-		<f:Card class="sapUiMediumMargin" width="300px">
-	<f:header>
-    	<card:Header
-
-				title="McDonald's"
-				subtitle="I'm lovin it"
-				iconSrc="../../assets/logo/mc_logo.png" 
-				iconDisplayShape="Square"
-			press="mcPress"
-			/>
-				
-    	</f:header>
-        	<f:content >
-	
-            </f:content>
-        </f:Card>
+	<!--<ImageContent
+        class="sapUiLargeMarginTop sapUiLargeMarginBottom" 
+        src="../../assets/logo/mc_logo.png"
+        description="Icon"
+	>
+    </ImageContent> -->
 
 
+		<FeedInput
+		post="onPost"
+		icon="test-resources/sap/m/images/dronning_victoria.jpg"
+		class="sapUiSmallMarginTopBottom" />
+	<List
+		showSeparators="Inner"
+		items="{/EntryCollection}" >
+		<FeedListItem
+			sender="{Author}"
+			icon="{AuthorPicUrl}"
+			senderPress="onSenderPress"
+			iconPress="onIconPress"
+			iconDensityAware="false"
+			info="{Type}"
+			timestamp="{Date}"
+			text="{Text}"
+			convertLinksToAnchorTags="All"/>
+	</List>
 
       
     </Page>

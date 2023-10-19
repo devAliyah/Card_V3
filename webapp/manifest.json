@@ -62,7 +62,8 @@
           "zusje.view.xml",
           "zusje.controller.js",
           "page.controller.js",
-					"manifest.json"
+					"manifest.json",
+          "feed.json"
 					
 				]
 			}
