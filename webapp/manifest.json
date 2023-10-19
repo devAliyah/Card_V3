@@ -55,6 +55,7 @@
 				"files": [
 					"View1.view.xml",
 					"View1.controller.js",
+          "mc.view.xml",
           "page.controller.js",
 					"manifest.json"
 					
@@ -98,16 +99,32 @@
           "target": [
             "TargetView1"
           ]
-        }
-      ],
+        },
+
+
+       {  "name": "mc",
+       "pattern": "mc",
+      "target":  "mc"
+    }
+   ],
       "targets": {
+      
+      
         "TargetView1": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "View1",
-          "viewName": "View1"
-        }
+          "viewName": "View1",
+          "viewLevel": 0
+        },
+        "mc": {
+          "viewId": "",
+          "viewName": "mc",
+          "viewLevel": 1
+           }
+
+      
       }
     },
     "rootView": {
