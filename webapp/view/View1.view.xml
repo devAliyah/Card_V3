@@ -2,25 +2,30 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
 	xmlns:c="sap.ui.webc.main"
+	xmlns:control="sap.ui.core.Control"
     xmlns:f="sap.f"
 	xmlns:card="sap.f.cards"
 	xmlns:core="sap.ui.core">
-    <Page id="page" title="{i18n>title}">
 
-		<f:Card class="sapUiMediumMargin" width="300px">
+    <Page id="page" title="{i18n>title}">
+	
+
+		<f:Card class="sapUiMediumMargin" width="300px" >
 	<f:header>
     	<card:Header
 				title="McDonald's"
 				subtitle="I'm lovin it"
-				iconSrc="sap-icon://competitor" />
+				iconSrc="../../assets/avatars/mc_logo.png" />
+			
     	</f:header>
         	<f:content>
+	
             </f:content>
         </f:Card>
 
 
 		<f:Card class="sapUiMediumMargin" width="300px">
-	<f:header>
+	<f:header flexenabled="false">
     	<card:Header
 				title="Burgerking"
 				subtitle="You Rule"
