@@ -56,6 +56,11 @@
 					"View1.view.xml",
 					"View1.controller.js",
           "mc.view.xml",
+          "mc.controller.js",
+          "burger.view.xml",
+          "burger.controller.js",
+          "zusje.view.xml",
+          "zusje.controller.js",
           "page.controller.js",
 					"manifest.json"
 					
@@ -101,10 +106,21 @@
           ]
         },
 
-
        {  "name": "mc",
        "pattern": "mc",
       "target":  "mc"
+    },
+
+    {
+      "name": "burger",
+      "pattern": "burger",
+      "target": "burger"
+    },
+
+    {
+      "name": "zusje",
+      "pattern": "zusje",
+      "target": "zusje"
     }
    ],
       "targets": {
@@ -122,8 +138,19 @@
           "viewId": "",
           "viewName": "mc",
           "viewLevel": 1
-           }
+           },
 
+            "burger": {
+              "viewId": "",
+              "viewName": "burger",
+              "viewLevel": 1
+            },
+
+            "zusje": {
+              "viewId": "",
+              "viewName": "zusje",
+              "viewLevel": 1
+            }
       
       }
     },

@@ -19,12 +19,13 @@ sap.ui.define([
             mcPress: function(evt) {
                 this.getRouter().navTo("mc");
             },
+
             burgerPress: function(evt) {
-                MessageToast.show("The image has been pressed");
+               this.getRouter().navTo("burger");
             },
 
                 zusjePress: function(evt) {
-                    MessageToast.show("The image has been pressed");
+                    this.getRouter().navTo("zusje");
                 },
 
                 getRouter: function() {

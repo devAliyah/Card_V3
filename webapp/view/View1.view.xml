@@ -37,7 +37,7 @@
 				
 					iconSrc="../../assets/logo/burger_logo.png" 
 				iconDisplayShape="Square"
-				press="burgerPress"/>
+				press=".burgerPress"/>
     	</f:header>
         	<f:content>
             	</f:content>
@@ -51,7 +51,7 @@
 				subtitle="Bourgondisch genieten"
 					iconSrc="../../assets/logo/zusje_logo.png" 
 				iconDisplayShape="Square" 
-				press="zusjePress" />
+				press=".zusjePress" />
     	</f:header>
         	<f:content>
             	</f:content>

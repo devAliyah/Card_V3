@@ -1,0 +1,36 @@
+<mvc:View controllerName="test.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+	xmlns:c="sap.ui.webc.main"
+	xmlns:control="sap.ui.core.Control"
+    xmlns:f="sap.f"
+	xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core">
+	
+
+    <Page id="burger" title="{i18n>burgertitle}">
+	
+
+	
+
+
+		<f:Card class="sapUiMediumMargin" width="300px">
+	<f:header >
+    	<card:Header
+				title="Burgerking"
+				subtitle="You Rule"
+				
+					iconSrc="../../assets/logo/burger_logo.png" 
+				iconDisplayShape="Square"
+				press="burgerPress"/>
+    	</f:header>
+        	<f:content>
+            	</f:content>
+        </f:Card>
+
+
+            	
+        
+      
+    </Page>
+</mvc:View>
