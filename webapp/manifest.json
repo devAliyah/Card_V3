@@ -55,11 +55,9 @@
 				"files": [
 					"View1.view.xml",
 					"View1.controller.js",
-					"manifest.json",
-					"assets/avatars/burger-logo.png",
-          "assets/avatars/mc-logo.png",
-          "assets/avatars/zusje-logo.png",
-          "mc.png"
+          "page.controller.js",
+					"manifest.json"
+					
 				]
 			}
 		},

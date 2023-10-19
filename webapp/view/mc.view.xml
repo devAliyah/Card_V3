@@ -19,7 +19,7 @@
 				subtitle="I'm lovin it"
 				iconSrc="../../assets/logo/mc_logo.png" 
 				iconDisplayShape="Square"
-			press=".mcPress"
+			press="mcPress"
 			/>
 				
     	</f:header>
