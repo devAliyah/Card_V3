@@ -15,23 +15,32 @@
         src="resources/sap-ui-core.js"
         data-sap-ui-theme="sap_horizon"
         data-sap-ui-resourceroots='{
-            "test": "./"
+            "test": "./",
+            "sap.ui.demo.mock": "mockdata"
         }'
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
         data-sap-ui-frameOptions="trusted"
-    ></script>
+        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"></script>
+    </script>
     <script id="locate-reuse-libs" src="./utils/locate-reuse-libs.js"
         data-sap-ui-manifest-uri="./manifest.json"
         data-sap-ui-componentName="test">
     </script> 
+
+
+
+</script>
+
 </head>
+
+
 <body class="sapUiBody sapUiSizeCompact" id="content">
     <div
         data-sap-ui-component
-        data-name="test"
+        data-name="test.controller.Page"
         data-id="container"
-        data-settings='{"id" : "test"}'
+        data-settings='{"id" : "test.controller.Page"}'
         data-handle-validation="true"
     ></div>
 </body>

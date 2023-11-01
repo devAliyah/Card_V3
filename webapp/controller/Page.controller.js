@@ -6,24 +6,13 @@ sap.ui.define([
 ], function(MessageToast, DateFormat, Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("test.controller.mc", {
-	
-		
-		
-		
+	return Controller.extend("test.controller.Page", {
+
 		onInit: function() {
 			// set mock model
-			var sPath = sap.ui.require.toUrl("sap/m/sample/Feed/feed.json");
+			var sPath = sap.ui.require.toUrl("card_v3/webapp/feed.json");
 			var oModel = new JSONModel(sPath);
 			this.getView().setModel(oModel);
-		},
-
-		onSenderPress: function(oEvent) {
-			MessageToast.show("Clicked on Link: " + oEvent.getSource().getSender());
-		},
-
-		onIconPress: function(oEvent) {
-			MessageToast.show("Clicked on Image: " + oEvent.getSource().getSender());
 		},
 
 		onPost: function(oEvent) {
@@ -34,6 +23,7 @@ sap.ui.define([
 			var sValue = oEvent.getParameter("value");
 			var oEntry = {
 				Author: "Alexandrina Victoria",
+				AuthorPicUrl: "http://upload.wikimedia.org/wikipedia/commons/a/aa/Dronning_victoria.jpg",
 				Type: "Reply",
 				Date: "" + sDate,
 				Text: sValue
@@ -45,10 +35,15 @@ sap.ui.define([
 			aEntries.unshift(oEntry);
 			oModel.setData({
 				EntryCollection: aEntries
-
-            });
+			});
 		},
-		
 
+		onSenderPress: function(oEvent) {
+			MessageToast.show("Clicked on Link: " + oEvent.getSource().getSender());
+		},
+
+		onIconPress: function(oEvent) {
+			MessageToast.show("Clicked on Image: " + oEvent.getSource().getSender());
+		}
 	});
 });

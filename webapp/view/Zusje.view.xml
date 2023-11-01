@@ -1,32 +1,39 @@
-<mvc:View controllerName="test.controller.View1"
+<mvc:View controllerName="test.controller.zusje"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
-	xmlns:c="sap.ui.webc.main"
-	xmlns:control="sap.ui.core.Control"
-    xmlns:f="sap.f"
-	xmlns:card="sap.f.cards"
-	xmlns:core="sap.ui.core">
+   xmlns:f="sap.f"
+	xmlns:card="sap.f.cards">
+
+    <Page id="zusje" title="{i18n>zusjetitle}">
+
+	<!--<ImageContent
+        class="sapUiLargeMarginTop sapUiLargeMarginBottom" 
+        src="../../assets/logo/mc_logo.png"
+        description="Icon"
+	>
+    </ImageContent> -->
+
+
+		<FeedInput
+		post="onPost"
+		icon="test-resources/sap/m/images/dronning_victoria.jpg"
+		class="sapUiSmallMarginTopBottom" />
 	
+	<List
+		showSeparators="Inner"
+		items="{/EntryCollection}" >
+		<FeedListItem
+			sender="{Author}"
+			icon="{AuthorPicUrl}"
+			senderPress="onSenderPress"
+			iconPress="onIconPress"
+			iconDensityAware="false"
+			info="{Type}"
+			timestamp="{Date}"
+			text="{Text}"
+			convertLinksToAnchorTags="All"/>
+	</List>
 
-    <Page id="page" title="{i18n>zusjetitle}">
-	
-
-
-<f:Card class="sapUiMediumMargin" width="300px">
-	<f:header>
-    	<card:Header
-				title="'t zusje"
-				subtitle="Bourgondisch genieten"
-					iconSrc="../../assets/logo/zusje_logo.png" 
-				iconDisplayShape="Square" 
-				press=".zusjePress" />
-    	</f:header>
-        	<f:content>
-            	</f:content>
-
-        </f:Card>
-            	
-        
       
     </Page>
 </mvc:View>

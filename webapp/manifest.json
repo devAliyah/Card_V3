@@ -63,7 +63,9 @@
           "zusje.controller.js",
           "page.controller.js",
 					"manifest.json",
-          "feed.json"
+          "feed.json",
+          "Page.view.xml",
+          "Page.controller.js"
 					
 				]
 			}
@@ -122,7 +124,15 @@
       "name": "zusje",
       "pattern": "zusje",
       "target": "zusje"
+    },
+
+    {
+      "name": "page",
+      "pattern": "page",
+      "target": "page"
     }
+
+
    ],
       "targets": {
       
@@ -150,6 +160,12 @@
             "zusje": {
               "viewId": "",
               "viewName": "zusje",
+              "viewLevel": 1
+            },
+
+            "page": {
+              "viewId": "",
+              "viewName": "page",
               "viewLevel": 1
             }
       

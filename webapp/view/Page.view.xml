@@ -1,24 +1,14 @@
-<mvc:View controllerName="test.controller.mc"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m"
-   xmlns:f="sap.f"
-	xmlns:card="sap.f.cards">
+<mvc:View
+	controllerName="test.controller.Page"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
 
-    <Page id="mc" title="{i18n>mctitle}">
+	 <Page id="page" title="{i18n>pagetitle}">
 
-	<!--<ImageContent
-        class="sapUiLargeMarginTop sapUiLargeMarginBottom" 
-        src="../../assets/logo/mc_logo.png"
-        description="Icon"
-	>
-    </ImageContent> -->
-
-
-		<FeedInput
+	<FeedInput
 		post="onPost"
 		icon="test-resources/sap/m/images/dronning_victoria.jpg"
 		class="sapUiSmallMarginTopBottom" />
-	
 	<List
 		showSeparators="Inner"
 		items="{/EntryCollection}" >
@@ -34,6 +24,5 @@
 			convertLinksToAnchorTags="All"/>
 	</List>
 
-      
-    </Page>
+	</Page>
 </mvc:View>

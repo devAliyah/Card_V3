@@ -12,26 +12,34 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("test.controller.View1", {
+	
         
 
 
-            
-            mcPress: function(evt) {
-                this.getRouter().navTo("mc");
-            },
+		burgerPress: function(oEvent) {
+            this.getRouter().navTo("burger");
+		},
 
-            burgerPress: function(evt) {
-               this.getRouter().navTo("burger");
-            },
+		mcPress: function(oEvent) {
+            this.getRouter().navTo("mc");
+		},
 
-                zusjePress: function(evt) {
-                    this.getRouter().navTo("zusje");
-                },
+        zusjePress: function(oEvent) {
+            this.getRouter().navTo("zusje");
+        },
 
-                getRouter: function() {
-                    return this.getOwnerComponent().getRouter();
-                }
-        
+
+        testPress: function(oEvent) {
+            this.getRouter().navTo("page");
+        },
+
+	
+        getRouter: function() {
+            return this.getOwnerComponent().getRouter();
+        },
+		
+
+
         });
     });
 

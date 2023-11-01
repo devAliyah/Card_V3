@@ -10,7 +10,7 @@ sap.ui.define([
 
 		onInit: function() {
 			// set mock model
-			var sPath = sap.ui.require.toUrl("../../feed.json");
+			var sPath = sap.ui.require.toUrl("Card_V3/webapp/feed.json");
 			var oModel = new JSONModel(sPath);
 			this.getView().setModel(oModel);
 		},
@@ -23,6 +23,7 @@ sap.ui.define([
 			var sValue = oEvent.getParameter("value");
 			var oEntry = {
 				Author: "Alexandrina Victoria",
+				AuthorPicUrl: "http://upload.wikimedia.org/wikipedia/commons/a/aa/Dronning_victoria.jpg",
 				Type: "Reply",
 				Date: "" + sDate,
 				Text: sValue
@@ -34,8 +35,7 @@ sap.ui.define([
 			aEntries.unshift(oEntry);
 			oModel.setData({
 				EntryCollection: aEntries
-
-            });
+			});
 		},
 
 		onSenderPress: function(oEvent) {
