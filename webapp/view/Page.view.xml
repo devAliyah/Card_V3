@@ -11,7 +11,7 @@
 		class="sapUiSmallMarginTopBottom" />
 	<List
 		showSeparators="Inner"
-		items="{/EntryCollection}" >
+		items="{review>/EntryCollection}" >
 		<FeedListItem
 			sender="{Author}"
 			icon="{AuthorPicUrl}"

@@ -10,9 +10,13 @@ sap.ui.define([
 
 		onInit: function() {
 			// set mock model
-			var sPath = sap.ui.require.toUrl("card_v3/webapp/feed.json");
-			var oModel = new JSONModel(sPath);
-			this.getView().setModel(oModel);
+			//var sPath = sap.ui.require.toUrl("card_v3/webapp/feed.json");
+			//var oModel = new JSONModel(sPath);
+			//this.getView().setModel(oModel);
+			var oReviewModel = new JSONModel();
+			oReviewModel.loadData("./feed.json");
+			this.getView().setModel(oReviewModel, "review");
+			sap.ui.getCore().setModel(oReviewModel);
 		},
 
 		onPost: function(oEvent) {
